@@ -1,0 +1,10 @@
+node,edge
+S,"A,B,C"
+A,"D,B"
+B,"F,E,C"
+C,"G,H"
+D,"F"
+F,""
+E,"G"
+G,""
+H,""

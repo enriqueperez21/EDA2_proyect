@@ -1,6 +1,6 @@
 def get_dfs_tree(graph, start_node):
     searched = {}
-    for node in grafo_letras:
+    for node in graph:
         searched[node] = False
     componentR = []
     tree = {}

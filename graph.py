@@ -52,8 +52,10 @@ class Graph_search:
     def __init__(self,graph, start):
         self.graph    = Graph (graph)
         self.start    = start
-        self.bfs_tree = Graph (get_bfs_tree(graph, start))
-        self.dfs_tree = Graph (get_dfs_tree(graph, start))
+        self.bfs_result = get_bfs_tree(graph, start)
+        self.dfs_result = get_dfs_tree(graph, start)
+        self.bfs_tree = Graph (self.bfs_result)
+        self.dfs_tree = Graph (self.dfs_result)
 
     def __str__(self):
         return f"{self.graph}, bfs = {self.bfs_tree}"
